@@ -11,15 +11,19 @@
     "start": "react-native start",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "test": "node node_modules/jest/bin/jest.js"
+    "test": "node node_modules/jest/bin/jest.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "jest": {
     "preset": "react-native"
   },
   "dependencies": {
     "react": "16.2.0",
-    "react-native": "0.52.0",
+    "react-native": "0.59.0",
     "react-native-oauth": "^2.2.0",
-    "react-native-twitter": "^0.2.1"
-  }
+    "react-native-twitter": "^0.2.1",
+    "snyk": "^1.163.3"
+  },
+  "snyk": true
 }
